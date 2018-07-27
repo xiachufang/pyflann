@@ -1,0 +1,13 @@
+language: python
+install: true
+script: true
+deploy:
+  provider: pypi
+  user: pyflann
+  password:
+    secure: S16yadAnjEDwT63cc8wtLl+2i+9LNKZ9j/JtxloovMqSRyPPhPDVSu79wpgYeNM3X3HTB5C21hT/TOvzapHtuTUdgNrt7Qr6JewP5K02cB1dZ3lkflr3ZS+ELVL8ugcufGOBk1Z7bsyyjbqLUjCEf06Rq187oFYw/oM/MEPw3FtI4XucTFMlDkbzPyxxtEvOPSLMSpqusqQ/ndHeU3KEdy6G/SEfO1sc2d3zdS/vPHAHKzkdEuRZnjLBeJahk9YLuJh9WQTtvnHmdWe/RCgy67kcz8A5qeN9gspTHfuJ6qYiWVbbSkpL2IHRBJMwjuB+b2SEbDbefpuvVcoH/JwDJ03PAyOCK8kNt6yLv6Aj/0+t+m0vYdBHBOA+EUeRToVD0siQfy7gsMI1sTSF23OdFVQEux8IiPBtbJLPMNfTbWTGbBiJT8A5ZB18ejyi1m9dMfVuRU8WUAxmIKQtyhbk7BVEXSAKXOGZhXkGbnUR5ioEEABYDZcst7hy4YMymvtmNt9keZzLpfkqRUSMUfSs9pFAiFPUUz8cMRleag7XSCmzfHoRG9np4+EEJEaaboaUYEoVMruXFbYOPx1Vlaz6LHHx8etH/yqcYt4fb+Og6Smx45fG0OhA834TMHdXeLzn5ZKTQbWAM9bJPSWVmlNOnHFJEv/SsdKaRWvEhh2795E=
+  server: https://pypi.xiachufang.com
+  distributions: sdist bdist_wheel
+  on:
+    tags: true
+    repo: xiachufang/pyflann
