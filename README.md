@@ -1,31 +1,27 @@
 pyflann
 =============
 
-###1. Introduction
+### 1. Introduction
 
-pyflann is the python bindings for [FLANN - Fast Library for Approximate Nearest Neighbors](http://www.cs.ubc.ca/research/flann/).
+pyflann is the python bindings for [FLANN - Fast Library for Approximate Nearest Neighbors](https://github.com/mariusmuja/flann).
 
-###2. Install
+### 2. Install
 
 #### For python2
 
 This package uses distutils, which is the default way of installing python modules. To install in your home directory, securely run the following:
 ```
-git clone https://github.com/primetang/pyflann.git
+git clone https://github.com/xiachufang/pyflann.git
 cd pyflann
 [sudo] python setup.py install
 ```
 
 Or directly through `pip` to install it:
 ```
-[sudo] pip install pyflann
+[sudo] pip install xiachufang-pyflann
 ```
 
-#### For python3
-
-Please refer to [this issuse](https://github.com/primetang/pyflann/issues/1) to modify the code.
-
-###3. Usage
+### 3. Usage
 
 Use it just like the following code:
 ```python
@@ -55,3 +51,14 @@ result, dists = flann.nn(
 print result
 print dists
 ```
+### 4. How to update
+1. Download flann source from https://github.com/mariusmuja/flann
+2. Compile according the [manual](http://www.cs.ubc.ca/research/flann/uploads/FLANN/flann_manual-1.8.4.pdf)
+```
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+```
+3. Copy relevant files from https://github.com/mariusmuja/flann/tree/master/src/python/pyflann
+4. Copy the dynamic link library from `build/lib/libflann.so`
