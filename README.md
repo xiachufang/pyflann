@@ -1,4 +1,4 @@
-pyflann
+pyflann [![Build Status](https://travis-ci.org/xiachufang/pyflann.svg?branch=master)](https://travis-ci.org/xiachufang/pyflann)
 =============
 
 ### 1. Introduction
